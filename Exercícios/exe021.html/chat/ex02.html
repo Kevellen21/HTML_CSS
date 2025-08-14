@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombra nas Caixas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .caixa {
+            background-color: white;
+            width: 250px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        /* Sombra externa */
+        .sombra-externa {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Sombra interna */
+        .sombra-interna {
+            box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            border-radius: 15px; /* arredonda os cantos */
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2); /* sombra leve */
+            max-width: 800px;
+            }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Sombra nas Caixas</h1>
+
+    <div class="caixa sombra-externa">
+        Sombra externa aplicada
+    </div>
+
+    <div class="caixa sombra-interna">
+        Sombra interna aplicada
+    </div>
+    <main> 
+        <h1>Apenas um exemplo de arredondamento de bordas de box.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione iste dicta quos aperiam ipsum ipsam dolores doloribus doloremque et suscipit. Quia, expedita! Nulla ea, magnam accusamus cupiditate aperiam placeat!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat corrupti vel ea aperiam commodi aliquid nostrum minus! Alias aliquam assumenda, voluptatum aut modi, harum reiciendis necessitatibus iste quae, eligendi enim?
+        </p>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos ou aumente e diminua o tela no seu PC.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto_p.png"  type="image/png">
+        
+        <source media="(max-width: 1050px)" srcset="Imagens/fot_m.png" type="image/png">
+        <img src="Imagens/foto_g.png" alt="Imagem flexível">
+    </picture>
+
+
+    <h1>Reproduzndo áudio</h1>
+    <p>Aprenda a produzir áudios no seu site.</p>
+    <audio src="midia/Akatsuki Rising - The Mini Vandals.mp3" controls autoplay loop></audio>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/audio_teste.mp3" type="audio/mpeg">
+        <source src="midia/audio_teste.ogg" type="audio/ogg">
+        <source src="midia/audio_teste.wav" type="audio/wav">
+        <p>Seu navagador não é compativel com audio.</p> <a href="midia/audio_teste.mp3">link para abaixar o audio</a>
+    </audio>
+</body>
+</html>
